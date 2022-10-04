@@ -10,5 +10,5 @@ urlpatterns = [
     path('board_b/<int:id>/',views.ArticleBView.as_view()),
     path("comment/", views.CommentView.as_view()),
     path("comment/<int:article_id>/", views.CommentView.as_view()),
-    path("like/", views.LikeView.as_view()),
+    path("like/<int:id>/", views.LikeView.as_view()),
 ]
